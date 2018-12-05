@@ -1,3 +1,15 @@
+html, body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-items: end;
+}
+
 header {
   display: flex;
   background-color: #efefef;
@@ -46,3 +58,14 @@ header .logo img {
   width: 20px;
 }
 
+section {
+  flex: 1 auto;
+  display: flex;
+  background-color: #f7f7f7;
+}
+
+.tool-bar {
+  display: flex;
+  width: 60px;
+  background-color: #333;
+}
