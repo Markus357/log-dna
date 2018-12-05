@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  background-color: #efefef;
+  height: 60px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  background-color: #db0a5b;
+}
+
+header .logo img {
+  display: inline-block;
+  height: 40px;
+  width: auto;
+  margin: 0 auto;
+}
