@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.container {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-items: end;
+}

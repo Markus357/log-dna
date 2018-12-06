@@ -1,0 +1,71 @@
+/****************** Container Config ******************/
+.container.main { flex: 1; }
+
+
+/****************** Header / Menu Bar ******************/
+.menu-bar {
+  flex-basis: 60px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 20px;
+
+  background-color: #efefef;
+}
+
+.menu-bar h1 {
+  flex: 1;
+  margin: 0 auto;
+}
+
+.menu-bar .menu-icon {
+  flex-basis: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon img { width: 20px; }
+
+
+/****************** Content Section ******************/
+.content {
+  flex: 1;
+
+  display: flex;
+  background-color: #f7f7f7;
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+}
+
+.descriptions {
+  flex-basis: 356px;
+  height: 100%;
+  background-color: #f1f1f1;
+  border-right: 1px solid #e1e1e1;
+  overflow-y: auto;
+}
+
+.description {
+  padding: 12px;
+  padding-bottom: 0;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  transition: background-color ease-in 125ms;
+}
+
+.description:hover { background-color: #ffffff; }
+
+.description h3 {
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+.description p {
+  font-size: 12px;
+  margin: 8px auto;
+}
