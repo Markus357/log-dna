@@ -9,17 +9,23 @@ body {
   display: flex;
 }
 
-h1 {
+h1, h2, h3, h4 {
   display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
   font-size: 22px;
   font-weight: 300;
 }
 
 h2 {
-  display: inline-block;
   font-size: 18px;
   font-weight: 300;
 }
+
+hr { margin: 0; }
 
 .container {
   height: 100%;
