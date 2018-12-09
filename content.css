@@ -36,6 +36,8 @@
   flex: 1;
 
   display: flex;
+  flex-direction: column;
+
   background-color: #f7f7f7;
 }
 
@@ -46,21 +48,29 @@
 
 .descriptions {
   flex-basis: 356px;
+
+  min-width: 356px;
   height: 100%;
+  overflow-y: auto;
+
+  color: #000;
   background-color: #f1f1f1;
   border-right: 1px solid #e1e1e1;
-  overflow-y: auto;
 }
 
 .description {
-  padding: 12px;
-  padding-bottom: 0;
-  border-top: 1px solid #e1e1e1;
+  padding: 6px 12px;
   border-bottom: 1px solid #e1e1e1;
+
   transition: background-color ease-in 125ms;
 }
 
-.description:hover { background-color: #ffffff; }
+.description.enter { opacity: 1; }
+
+.description:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+}
 
 .description h3 {
   font-size: 12px;
@@ -69,5 +79,103 @@
 
 .description p {
   font-size: 12px;
-  margin: 8px auto;
+  line-height: 15px;
+  margin: 6px auto;
+}
+
+/****************** Main / Text Content ******************/
+
+.main-content {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 356px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.text-content {
+  flex: 1;
+  padding: 25px 30px;
+}
+
+.text-content h3,
+.text-content h4 {
+  display: block;
+}
+
+.text-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.text-content h4 {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.text-content hr {
+  border-style: solid;
+  border-color: #ededed;
+  width: 80%;
+  margin: 16px 0;
+}
+
+.text-content p {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+p .drop-cap {
+  color: #000;
+  float: left;
+  font-size: 38px;
+  line-height: 30px;
+  padding-top: 2px;
+  padding-right: 6px;
+  margin-left: -2px;
+}
+
+.text-content picture {
+  display: block;
+  text-align: center;
+}
+
+picture > * {
+  max-width: 100%;
+}
+
+picture + p.caption {
+  font-size: 10px;
+  font-style: italic;
+  text-align: center;
+  margin: 4px 0 16px;;
+}
+
+/****************** Input ******************/
+
+.input {
+  display: flex;
+  border-top: 1px solid #ededed;
+  flex-basis: 80px;
+  padding: 20px;
+}
+
+.input input {
+  flex: 1;
+
+  padding-left: 16px;
+
+  border: 1px solid #ededed;
+  border-radius: 2px;
+
+  background-color: #f7f7f7;
+}
+
+.input input::placeholder {
+  font-size: 16px;
+  color: #aaa;
 }
