@@ -143,6 +143,7 @@ p .drop-cap {
 .text-content picture {
   display: block;
   text-align: center;
+  margin-top: 20px;
 }
 
 picture > * {
